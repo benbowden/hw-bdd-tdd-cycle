@@ -1,27 +1,3 @@
-BDD, TDD Cycle
-===
-
-In this assignment you will use a combination of Behavior-Driven Design (BDD) and Test-Driven Development (TDD) with the Cucumber and RSpec tools to add a "find movies with same director" feature to RottenPotatoes, and deploy the resulting app on Heroku.
-
-To get the initial RottenPotatoes code please fork this bdd-tdd-cycle repo to your GitHub account with the Fork button on GitHub. Then copy the clone URL from your repo, and execute the following command in the top level of your Cloud9 workspace:
-
-`git clone <your clone URL goes here>`
-
-Next, follow the instructions below to get setup:
-----
-1) Change into the rottenpotatoes directory: cd hw-bdd-tdd-cycle/rottenpotatoes  
-2) Run bundle install --without production to make sure all gems are properly installed.  
-3) Run bundle exec rake db:migrate to apply database migrations.  
-4) Finally, run these commands to set up the Cucumber directories (under features/) and RSpec directories (under spec/) if they don't already exist, allowing overwrite of any existing files:
-
-```shell
-rails generate cucumber:install capybara
-rails generate cucumber_rails_training_wheels:install
-rails generate rspec:install
-```
-5) You can double-check if everything was installed by running the tasks `rspec` and `cucumber`.  
-
-Since presumably you have no features or specs yet, both tasks should execute correctly reporting that there are zero tests to run. Depending on your version of rspec, it may also display a message stating that it was not able to find any _spec.rb files.
 
 **Part 1: add a Director field to Movies**
 
