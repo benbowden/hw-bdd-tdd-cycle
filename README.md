@@ -1,14 +1,4 @@
 
-**Part 1: add a Director field to Movies**
-
-Create and apply a migration that adds the Director field to the movies table. 
-The director field should be a string containing the name of the movie’s director. 
-HINT: use the [`add_column` method of `ActiveRecord::Migration`](http://apidock.com/rails/ActiveRecord/ConnectionAdapters/SchemaStatements/add_column) to do this. 
-
-Remember to add `:director` to the list of movie attributes in the `def movie_params` method in `movies_controller.rb`.
-
-Remember that once the migration is applied, you also have to do `rake db:test:prepare` 
-to load the new post-migration schema into the test database!
 
 **Part 2: use BDD+TDD to get new scenarios passing**
 
@@ -70,5 +60,3 @@ To see the results in Cloud9, open /coverage/index.html. You will see the code, 
 
 Improve your test coverage by adding unit tests and/or Cucumber features for untested or undertested code. Specifically, you can write unit tests for the `update`, `destroy`, and `create` controller methods, and perhaps bring in cucumber scenarios (and step definitions) from previous assignments.
 
-**Submission:**
-Follow the submission instructions from your professor.
